@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b615f5a034.js" crossorigin="anonymous"></script>
+    <title>Facebook clon</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
+            <ul>
+                <li><img src="images/notification.png" ></li>
+                <li><img src="images/inbox.png" ></li>
+                <li><img src="images/video.png" ></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Buscar">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.webp">
+            </div>
+        </div>
+            <!------------settings-menu------------------------->
+        <div class="settings-menu">
+
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+
+             <div class="settings-menu-inner">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.webp" >
+                        <div >
+                            <p>Gojo</p>
+                            <a href="profile.html">Mí perfil</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user-profile">
+                        <img src="images/feedback.png" >
+                        <div >
+                            <p>Dar Feedback</p>
+                            <a href="#">Ayudanos a mejorar el nuevo diseño</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="settings-links">
+                            <img src="images/setting.png" class="settings-icon">
+                            <a href="#">Configuración y Privacidad <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="images/help.png" class="settings-icon">
+                        <a href="#">Ayuda y Soporte <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="images/display.png" class="settings-icon">
+                        <a href="#">Pantalla y Accesibilidad <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="images/logout.png" class="settings-icon">
+                        <a href="#">Cerrar sesión <img src="images/arrow.png" width="10px"></a>
+                    </div>
+             </div>
+        </div>
+
+    </nav>
+    <div class="container">
+                <!------------Left-sidebar------------------------->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png" >Noticias</a>
+                <a href="#"><img src="images/friends.png" >Amigos</a>
+                <a href="#"><img src="images/group.png" >Grupos</a>
+                <a href="#"><img src="images/marketplace.png" >Marketplace</a>
+                <a href="#"><img src="images/watch.png" >Videos</a>
+                <a href="#">Ver más</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Tús atajos</p>
+                <a href="#"><img src="images/shortcut-1.png" >Desarrolladores Web</a>
+                <a href="#"><img src="images/shortcut-2.png" >Curso Diseño Web</a>
+                <a href="#"><img src="images/shortcut-3.png" >Desarrollo Full Stack</a>
+                <a href="#"><img src="images/shortcut-4.png" >Expertos en sitios Web</a>
+            </div>
+        </div>
+                <!------------------main-content---------------->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png" >
+                    <p>Publicar historia</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.webp" >
+                    <p>Marin Kitagawa</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.webp" >
+                    <p>Inui Sajuna</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.webp" >
+                    <p>Shinju Inui</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.webp" >
+                    <p>Nowa Sugaya</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.webp" >
+                    <div >
+                        <p>Gojo</p>
+                        <small>Publico <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="¿Qué estás pensando?"></textarea>
+
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png" > En Vivo</a>
+                        <a href="#"><img src="images/photo.png" > Foto/Video</a>
+                        <a href="#"><img src="images/feeling.png" > Felling/Actividad</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.webp" >
+                        <div >
+                            <p>Gojo</p>
+                            <span>28 de Abril 2023, 12:00 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">😰😰🫣🤤</p>
+                <img src="images/feed-image-1.webp" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" >777</div>
+                        <div><img src="images/comments.png" >50</div>
+                        <div><img src="images/share.png" >200</div>
+                    </div>
+                    <div class="post-profile-icons">
+                        <img src="images/profile-pic.webp" alt=""> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.webp" >
+                        <div >
+                            <p>Gojo</p>
+                            <span>28 de Abril 2023, 12:00 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <img src="images/feed-image-2.webp" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png" >777</div>
+                        <div><img src="images/comments.png" >200</div>
+                        <div><img src="images/share.png" >1k</div>
+                    </div>
+                    <div class="post-profile-icons">
+                        <img src="images/profile-pic.webp" alt=""> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.webp" >
+                        <div >
+                            <p>Gojo</p>
+                            <span>28 de Abril 2023, 12:00 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <img src="images/feed-image-3.webp" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png" >5</div>
+                        <div><img src="images/comments.png" >10</div>
+                        <div><img src="images/share.png" >4</div>
+                    </div>
+                    <div class="post-profile-icons">
+                        <img src="images/profile-pic.webp" alt=""> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.webp" >
+                        <div >
+                            <p>Gojo</p>
+                            <span>28 de Abril 2023, 12:00 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <img src="images/feed-image-4.webp" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png" >777</div>
+                        <div><img src="images/comments.png" >200</div>
+                        <div><img src="images/share.png" >1k</div>
+                    </div>
+                    <div class="post-profile-icons">
+                        <img src="images/profile-pic.webp" alt=""> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.webp" >
+                        <div >
+                            <p>Gojo</p>
+                            <span>28 de Abril 2023, 12:00 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <img src="images/feed-image-5.webp" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png" >100k</div>
+                        <div><img src="images/comments.png" >25k</div>
+                        <div><img src="images/share.png" >30k</div>
+                    </div>
+                    <div class="post-profile-icons">
+                        <img src="images/profile-pic.webp" alt=""> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="load-more-btn">Cargar más</button>
+
+        </div>
+                <!-----------------right-sidebar---------------->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Eventos</h4>
+                <a href="#">Ver todos</a>
+            </div>
+
+                <div class="event">
+                    <div class="left-event">
+                        <h3>18</h3>
+                        <span>Marzo</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Social Media</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
+                        <a href="#">Más informacion</a>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="left-event">
+                        <h3>22</h3>
+                        <span>Junio</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Mobile Marketing</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
+                        <a href="#">Más informacion</a>
+                    </div>
+                </div>
+                <div class="sidebar-title">
+                    <h4>Anuncios</h4>
+                    <a href="#">Cerrar</a>
+                </div>
+                <img src="images/advertisement.png" class="sidebar-adds">
+
+                <div class="sidebar-title">
+                    <h4>Chats</h4>
+                    <a href="#">Ocultar</a>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/member-1.webp" >
+                    </div>
+                    <p>Marin Kitagawa</p>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/member-2.webp" >
+                    </div>
+                    <p>Inui Sajuna</p>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/member-3.webp" >
+                    </div>
+                    <p>Shinju Inui</p>
+                </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+            <p>©Copyright 2023 - ZASKE - YouTube</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
